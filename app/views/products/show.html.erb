@@ -1,0 +1,26 @@
+<h1>Here's this specific <%= @product.name %> Detail</h1>
+<p>Cost in USD: $<%= @product.cost %></p>
+<p>Which country it was made in: <%= @product.country %></p>
+
+<p><%= link_to 'Edit Product Info', edit_product_path, :class => 'btn btn-danger'  %>
+<%= link_to 'Delete Product', product_path(@product), :method =>'delete', :data => {:confirm => 'You sure you wanna delete it??'}, :class => 'btn btn-danger'%></p>
+
+<p class="mt-5"><%= link_to 'Add Review', new_product_review_path(@product)%><p>
+
+<% if @product.reviews.any? %>
+
+    <% @product.reviews.each do |review| %>
+      <div class="review-body">
+        <h5>Review Author: <%= review.author %></h5>
+        <h5>Total Rating: <%= review.rating %></h5>
+        <p>
+          <%= review.content %>
+        </p>
+        <%= link_to 'Edit Review', edit_product_review_path(@product, review), :class => 'btn btn-success btn-md' %>
+        <%= link_to 'Delete Review', product_review_path(@product, review), :method =>'delete', :data => {:confirm => 'You sure you wanna delete this masterpiece??'}, :class => 'btn btn-danger btn-md'%>
+      </div>
+    <% end %>
+  <% else %>
+    <h5>Can't seem to find any reviews on this one yet</h5>
+  <% end %>
+</div>

@@ -1,0 +1,45 @@
+
+<h3>Here's the product with the highest # of reviews.</h3>
+
+<ul>
+  <% @products.most_reviews.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>Here's the two most recent products.</h3>
+
+<ul>
+  <% @products.two_most_recent_products.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>Products Made in the USA</h3>
+
+<ul>
+  <% @products.made_in_usa.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+<hr>
+<h3>Products Made in Mexico</h3>
+
+<ul>
+  <% @products.made_in_mexico.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+<hr>
+
+<h3>Total list of all my awesome Products</h3>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= link_to product.name, product%> </li>
+  <% end %>
+</ul>

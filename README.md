@@ -6,7 +6,7 @@
 
 ## Description
 
-_Project
+Project
 You've in the running for a freelance development job, as the developer for Mario's Speciality Food Products (or another fictional company of your choosing, if you'd prefer). This is your chance to take on your first long-term contract, but first Mario wants to make sure you're the right person for the job. He's asked you for an MVP and wants it by 5:00 tonight. The stakes are higher than usual, since Mario's old site had thousands of unique visitors each day. If you can get the job, this is a great way to increase your profile as a developer.
 
 In particular, Mario is concerned about the information in his database being correct; your goal for today is to have the most comprehensive validations and callbacks to ensure information is properly saved and formatted in the database.
@@ -17,7 +17,7 @@ The site should have functionality to review products so your database should in
 
 Landing Page
 
-The landing page should include basic information about the company and should allow users to easily navigate to other areas of the site. This page should also include the three most recently added products and the product with the most reviews. See more information in the Scopes section below.
+The landing page should include basic information about the company and should allow users to easily navigate to other areas of the site. This page should also include the five most recently added products and the product with the most reviews. See more information in the Scopes section below.
 
 Products
 
@@ -31,7 +31,7 @@ Scopes
 Your site should use scopes to display the following information on the site:
 
 The product with the most reviews.
-The three most recently added products.
+The five most recently added products.
 All products made in the USA for buyers that want to buy local products.
 Validations
 
@@ -58,7 +58,7 @@ Add a scope to retrieve the products with the highest average rating.
 Change the ratings system so stars (or another icon) are used instead of a number.
 Add Images throughout the site, including images for Products. You can use URLs (easiest) or use the Paperclip gem (which we'll be covering next week).
 Jump ahead to next week and add user authentication to your site.
-Choose a site online with a style you like, build a style for this site based on it, and include a link to that site within the README.md file._
+Choose a site online with a style you like, build a style for this site based on it, and include a link to that site within the README.md file.
 
 ## Setup/Installation Requirements
 _You will need Ruby/Rails and postgres to run this app locally._
@@ -68,7 +68,7 @@ _You will need Ruby/Rails and postgres to run this app locally._
 * _Use mac command or windows cntrl t to open a second terminal window, in that window run the command $'postgres'_
 * _Back in the original window, run command $'rake db:create db:migrate'_
 * _Run the command $'rails serve'_
-* _Open your favorite web browser and punch in 'localhost:3200'_
+* _Open your favorite web browser and punch in 'localhost:3000'_
 
 ## Known Bugs
 
