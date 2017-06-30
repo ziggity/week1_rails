@@ -11,8 +11,8 @@
 
     <% @product.reviews.each do |review| %>
       <div class="review-body">
-        <h5>Review Author: <%= review.author %></h5>
-        <h5>Total Rating: <%= review.rating %></h5>
+        <h5>Author<%= review.author %></h5>
+        <h5>Rating<%= review.rating %></h5>
         <p>
           <%= review.content %>
         </p>
