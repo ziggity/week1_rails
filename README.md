@@ -64,10 +64,10 @@ Choose a site online with a style you like, build a style for this site based on
 _You will need Ruby/Rails and postgres to run this app locally._
 
 * _Clone this repository from https://github.com/ziggity/week1_rails.git :)_
-* _Run the command $'bundle install'_
-* _Use mac command or windows cntrl t to open a second terminal window, in that window run the command $'postgres'_
+* _Run the command_$`bundle install`
+* _Use mac command or windows cntrl t to open a second terminal window, in that window run the command_ $`postgres`
 * _Back in the original window, run command $'rake db:create db:migrate'_
-* _Run the command $'rails serve'_
+* _Run the command_$`rails serve`
 * _Open your favorite web browser and punch in 'localhost:3000'_
 
 ## Known Bugs
